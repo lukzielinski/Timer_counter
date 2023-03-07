@@ -3,10 +3,19 @@ body {
   height: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  background-color: #fdfd9641;
 }
 
-.nav-link{
-  font-size: larger;
+main {
+  height: calc(100% - 75px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-header {
+  font-size: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

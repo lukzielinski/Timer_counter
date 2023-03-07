@@ -3,9 +3,16 @@ body
 {
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
     box-sizing: border-box;
+    background-color: #fdfd9641;
 }
-ul{
-    border: 1px solid red !important; 
+main{
+    height: calc(100% - 75px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.counter-header{
+    font-size: 80px;
 }
