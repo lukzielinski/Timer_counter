@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer and counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md" style="background-color: #ECD06F;">
+        <h3 class="order-1 w-100 text-dark p-2">Timer & counter</h3>
+        <div class="navbar-collapse w-100 order-2 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="timer.html" class="nav-link text-dark">
+                        Timer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="counter.html" class="nav-link text-dark">
+                        Counter
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1 class="text-dark timer counter-header">0</h1>
+        <div class="btn-container p-3">
+            <button class="btn btn-outline-dark btn-lg m-2" id="start">Start</button>
+            <button class="btn btn-outline-dark btn-lg m-2" id="reset">Reset</button>
+            <button class="btn btn-outline-dark btn-lg m-2" id="increase">Stop</button>
+            <div class="progress mt-5">
+                <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>          
+        </div>
+    </main>
+    <!--script-->
+    <script src="timer.js"></script>
+</body>
+</html>
