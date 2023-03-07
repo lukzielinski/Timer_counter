@@ -1,8 +1,12 @@
-html {
+html,
+body {
   height: 100%;
-  background-color: red;
-  border: 1px solid black;
+  margin: 0 auto;
   box-sizing: border-box;
+}
+
+.nav-link{
+  font-size: larger;
 }
 
 /*# sourceMappingURL=style.css.map */
