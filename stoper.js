@@ -1,8 +1,8 @@
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
-const tens = document.getElementById('tens');
-const seconds = document.getElementById('seconds');
+let tens = document.getElementById('tens');
+let seconds = document.getElementById('seconds');
 
 let interval;
 
@@ -24,15 +24,15 @@ reset.onclick = function() {
 }
 
 function startTimer() {
-    tens.innerHTML++;
-    if(tens.innerHTML < 9){
-        tens.innerHTML = '0' + tens.innerHTML;
+    tens++;
+    if(tens <= 9){
+        tens.innerHTML = '0' + tens;
     }
-    if(tens.innerHTML > 99){
-        seconds.innerHTML++;
+    if(tens > 99){
+        seconds++;
         tens.innerHTML = '00';
     }
-    if(seconds.innerHTML < 9){
-        seconds.innerHTML = '0' + seconds.innerHTML;
+    if(seconds < 9){
+        seconds.innerHTML = '0' + seconds;
     }
 }
