@@ -12,6 +12,7 @@ start.addEventListener('click', function() {
     }, 1000);
 });
 
-stop.addEventListener('click', function() {
-    clearInterval();
+reset.addEventListener('click', function() {
+    seconds = 0;
+    timer.textContent = seconds;
 });
