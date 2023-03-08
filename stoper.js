@@ -1,22 +1,14 @@
 const start = document.getElementById('start');
 const stop = document.getElementById('stop');
 const reset = document.getElementById('reset');
-const timer = document.querySelector('.timer');
 
-let seconds = 0;
-let isTimerRunning = false;
+let interval;
 
-start.addEventListener('click', function() {
-    if(isTimerRunning){
+start.onclick = function() {
+    clearInterval(interval);
+    interval = setInterval(startTimer, 10);
+}
 
-    }
-});
-
-reset.addEventListener('click', function() {
-    seconds = 0;
-    timer.textContent = seconds;
-});
-
-stop.addEventListener('click', function() {
-    isTimerRunning = false;
-});
+stop.onclick = function() {
+    clearInterval(interval);
+}
