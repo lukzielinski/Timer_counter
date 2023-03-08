@@ -7,12 +7,9 @@ let seconds = 0;
 let isTimerRunning = false;
 
 start.addEventListener('click', function() {
-    if(!isTimerRunning) return;
-    isTimerRunning = true;
-    setInterval(function() {
-        seconds++;
-        timer.textContent = seconds;
-    }, 1000);
+    if(isTimerRunning){
+
+    }
 });
 
 reset.addEventListener('click', function() {
